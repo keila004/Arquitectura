@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Arquitectura</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    .tachado { text-decoration: line-through; background-color: #d4edda; }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular Arquitectura – Seguimiento Personal</h1>
+
+  <script>
+    function toggleTachado(checkbox) {
+      const row = checkbox.parentElement.parentElement;
+      row.classList.toggle("tachado", checkbox.checked);
+    }
+  </script>
+
+  <!-- Repite esto para cada semestre -->
+  <h2>Semestre I</h2>
+  <table>
+    <tr><th>Ramo</th><th>Completado</th></tr>
+    <tr><td>Taller de Proyectos I</td><td><input type="checkbox" onclick="toggleTachado(this)"></td></tr>
+    <tr><td>Fundamentos de la Arquitectura</td><td><input type="checkbox" onclick="toggleTachado(this)"></td></tr>
+    <tr><td>Comunicación Gráfica</td><td><input type="checkbox" onclick="toggleTachado(this)"></td></tr>
+    <tr><td>Medios de Representación</td><td><input type="checkbox" onclick="toggleTachado(this)"></td></tr>
+    <tr><td>Seminario Cultura I</td><td><input type="checkbox" onclick="toggleTachado(this)"></td></tr>
+    <tr><td>Habilidades Comunicativas</td><td><input type="checkbox" onclick="toggleTachado(this)"></td></tr>
+  </table>
+
+  <!-- Puedes seguir agregando Semestre II, III, etc. con sus respectivos ramos -->
+</body>
+</html>
